@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ტექნომაღაზია</title>
+    <link rel="stylesheet" href="stili.css">
+</head>
+<body>
+    <main class="mtavari">
+        <header class="magaziis-shesavali">
+            <p class="shesavlis-minishneba">ტექნიკა შენს სტილში</p>
+
+            <h1>ტექნომაღაზია</h1>
+
+            <p class="shesavlis-agwera">
+                აღმოაჩინე ტექნიკა შენი ყოველდღიურობისთვის.
+            </p>
+
+            <a class="produqtebis-bmuli" href="#produqtebis-sia">
+                პროდუქტების ნახვა ↓
+            </a>
+        </header>
+
+        <div class="kalatis-shejameba">
+            <p class="kalatis-informacia">
+                კალათაშია:
+                <span id="kalatis-raodenoba">0</span>
+                ნივთი
+            </p>
+
+            <p class="kalatis-jamis-teqsti">
+                სულ გადასახდელია:
+                <span id="kalatis-jami">0</span> ₾
+            </p>
+
+            <button
+                type="button"
+                id="ertis-amogeba"
+                class="gasuftavebis-gilaki"
+                disabled
+            >
+                ერთის ამოღება
+            </button>
+
+            <button
+                type="button"
+                id="kalatis-gasuftaveba"
+                class="gasuftavebis-gilaki"
+            >
+                კალათის გასუფთავება
+            </button>
+
+            <button
+                type="button"
+                id="gadaxdilis-gilaki"
+                class="gadaxdilis-gilaki"
+            >
+                💳 გადახდა
+            </button>
+        </div>
+
+        <section class="kalatis-detalebi" aria-labelledby="kalatis-satauri">
+            <h2 id="kalatis-satauri">კალათის პროდუქტები</h2>
+
+            <ul id="kalatis-produqtebi" class="kalatis-produqtebi">
+                <li class="carieli-kalatis-teqsti">
+                    კალათა ცარიელია.
+                </li>
+            </ul>
+
+        </section>
+
+        <section class="produqtebi" 
+                 aria-label="პროდუქტები"
+                 id="produqtebis-sia"
+            >
+
+            <div class="produqtebis-satauri">
+                <h2>პოპულარული პროდუქტები</h2>
+
+                <p>
+                    შეარჩიე ტექნიკა მუშაობის, თამაშისა და ყოველდღიური გამოყენებისთვის.
+                </p>
+            </div>
+
+            <article class="produqtis-barati">
+                <div class="produqtis-gamosaxuleba" aria-hidden="true">
+                    🎧
+                </div>
+
+                <span class="produqtis-kategoria">აუდიო</span>
+
+                <h2 class="produqtis-saxeli">უსადენო ყურსასმენი</h2>
+
+                <p class="produqtis-agwera">
+                    მუსიკისთვის, ზარებისთვის და ყოველდღიური გამოყენებისთვის.
+                </p>
+
+                <div class="produqtis-qveda">
+                    <span class="produqtis-fasi">149 ₾</span>
+
+                    <button 
+                        type="button"
+                        class="damatebis-gilaki"
+                        data-saxeli="უსადენო ყურსასმენი"
+                        data-fasi="149"
+                    >
+                        კალათაში დამატება
+                    </button>
+                </div>
+            </article>
+
+            <article class="produqtis-barati">
+                <div class="produqtis-gamosaxuleba" aria-hidden="true">
+                    ⌨️
+                </div>
+
+                <span class="produqtis-kategoria">კლავიატურები</span>
+
+                <h2 class="produqtis-saxeli">მექანიკური კლავიატურა</h2>
+
+                <p class="produqtis-agwera">
+                    განათებული ღილაკები და კომფორტული აკრეფა მუშაობისა და თამაშისთვის.
+                </p>
+
+                <div class="produqtis-qveda">
+                    <span class="produqtis-fasi">229 ₾</span>
+
+                    <button
+                        type="button"
+                        class="damatebis-gilaki"
+                        data-saxeli="მექანიკური კლავიატურა"
+                        data-fasi="229"
+                    >
+                        კალათაში დამატება
+                    </button>
+                </div>
+            </article>
+
+            <article class="produqtis-barati">
+                <div class="produqtis-gamosaxuleba" aria-hidden="true">
+                    🖱️
+                </div>
+
+                <span class="produqtis-kategoria">მაუსები</span>
+
+                <h2 class="produqtis-saxeli">უსადენო მაუსი</h2>
+
+                <p class="produqtis-agwera">
+                    მსუბუქი დიზაინი და ზუსტი მოძრაობა ყოველდღიური გამოყენებისთვის.
+                </p>
+
+                <div class="produqtis-qveda">
+                    <span class="produqtis-fasi">89 ₾</span>
+
+                    <button
+                        type="button"
+                        class="damatebis-gilaki"
+                        data-saxeli="უსადენო მაუსი"
+                        data-fasi="89"
+                    >
+                        კალათაში დამატება
+                    </button>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <div id="shetyobinebis-foni" class="shetyobinebis-foni">
+        <div class="shetyobinebis-fanjara">
+            <h2>გადახდა ვერ შესრულდა</h2>
+
+            <p>
+                ბოდიში, თქვენი მოქმედება უარყოფილია,
+                რადგან პროექტი ჯერ დასრულებული არ არის. 
+            </p>
+
+            <button id="shetyobinebis-daxurva" type="button">
+                გასაგებია
+            </button>
+        </div>
+    </div>
+    
+    <script src="moqmedebebi.js"></script>
+</body>
+</html>
